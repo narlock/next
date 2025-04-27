@@ -1,17 +1,25 @@
-'use client';
+'use client'; // Must be first line
 
 import { useSearchParams } from 'next/navigation';
-import projects from '../../data/projects.json'; // Adjust path depending on your structure
+import { useEffect, useState } from 'react';
+import projectsData from '../../data/projects.json'; // adjust path if needed
 
 export default function ProjectsPage() {
   const searchParams = useSearchParams();
   const techFilter = searchParams.get('tech');
 
-  const filteredProjects = techFilter
-    ? projects.filter((project) =>
+  const [filteredProjects, setFilteredProjects] = useState(projectsData);
+
+  useEffect(() => {
+    if (techFilter) {
+      const filtered = projectsData.filter((project) =>
         project.technologies.includes(techFilter)
-      )
-    : projects; // Show all if no filter
+      );
+      setFilteredProjects(filtered);
+    } else {
+      setFilteredProjects(projectsData);
+    }
+  }, [techFilter]);
 
   return (
     <main className="p-8">
