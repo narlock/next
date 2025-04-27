@@ -122,7 +122,7 @@ export default function Home() {
               <FaGamepad className="w-10 h-10 text-orange-300" />
               <div className="flex flex-col items-start ml-4">
                 <h3 className="text-white text-base font-semibold">LibGDX</h3>
-                <p className="text-gray-400 text-xs mt-1">Game Dev</p>
+                <p className="text-gray-400 text-xs mt-1">Java Framework</p>
               </div>
             </Link>
 
