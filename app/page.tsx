@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <div>Next.js on GitHub Pages</div>
+    <main className="min-h-screen flex items-center justify-center bg-gray-700">
+      <h1 className="text-5xl font-bold text-white">narlock</h1>
     </main>
   );
 }
