@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState, Suspense } from 'react';
-import projectsData from '../../data/projects.json';
+import projectsData from '../../data/projects.json' assert { type: 'json' };
 
 function ProjectsContent() {
   const searchParams = useSearchParams();

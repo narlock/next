@@ -1,18 +1,95 @@
 [
     {
-      "title": "Kafka Stream Processor",
-      "description": "A real-time data pipeline using Apache Kafka and Spring Boot.",
-      "technologies": ["Java", "Spring Boot", "Apache Kafka"]
+        "title": "TamoStudy",
+        "description": "Productivity timer with a motivating virtual pet companion.",
+        "technologies": [
+            "Java",
+            "Git",
+            "Swing"
+        ]
     },
     {
-      "title": "Portfolio Website",
-      "description": "Personal portfolio built with Next.js and TailwindCSS.",
-      "technologies": ["Next.js", "TailwindCSS", "JavaScript"]
+        "title": "Portfolio Website",
+        "description": "Personal portfolio built with Next.js and TailwindCSS.",
+        "technologies": [
+            "Next.js",
+            "TailwindCSS",
+            "TypeScript",
+            "Git"
+        ]
     },
     {
-      "title": "AWS Lambda Service",
-      "description": "Serverless function service on AWS using Python.",
-      "technologies": ["AWS", "Python"]
+        "title": "SpaceCards",
+        "description": "Flashcard project to help develop long-term memory.",
+        "technologies": [
+            "Python",
+            "Git",
+            "Tkinter"
+        ]
+    },
+    {
+        "title": "Time Block API",
+        "description": "Microservice for managing time-blocked calendar events.",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "Git"
+        ]
+    },
+    {
+        "title": "mark",
+        "description": "Web Bookmarks manager inside of the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ]
+    },
+    {
+        "title": "Alder",
+        "description": "Feature-rich Productivity Discord Bot.",
+        "technologies": [
+            "Python",
+            "Flask",
+            "MySQL",
+            "Git"
+        ]
+    },
+    {
+        "title": "Kaizen LAN",
+        "description": "Fullstack app that provides widgets to continuously improve your life.",
+        "technologies": [
+            "Express.js",
+            "Java",
+            "Spring Boot",
+            "GraphQL",
+            "MySQL",
+            "Git"
+        ]
+    },
+    {
+        "title": "RogueBoss",
+        "description": "Simple battle simulator for building engaging online communities.",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "Git",
+            "Swing"
+        ]
+    },
+    {
+        "title": "Pomo",
+        "description": "Fully customizable Pomodoro focus timer built for the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ]
+    },
+    {
+        "title": "kb",
+        "description": "Kanban project organization tool built for the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ]
     }
-  ]
-  
+]

@@ -27,7 +27,7 @@ export default function Home() {
 
         {/* Subtitle */}
         <p className="text-gray-300 mt-4 max-w-2xl text-lg">
-          Software Engineer with a focus on fullstack development and integration engineering across modern web, cloud, and distributed systems.
+          Software Engineer with a focus on Integration Engineering and Fullstack Development across modern web, cloud, and distributed systems.
         </p>
 
         {/* Social Links */}
@@ -51,84 +51,86 @@ export default function Home() {
 
         {/* Technologies Section */}
         <section className="w-full">
-          <h2 className="text-3xl font-bold text-white mb-8">Technologies I use</h2>
+          <h2 className="text-3xl font-bold text-white">Technologies I use</h2>
+          <p className="text-gray-400 text-sm mt-2 mb-8 max-w-xl mx-auto">
+            Click on any technology below to view projects where I've used that technology.
+          </p>
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             
             {/* Java */}
-            <Link href="/projects?tech=Java" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <FaJava className="w-10 h-10 text-orange-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=Java" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <FaJava className="w-10 h-10 md:w-12 md:h-12 text-orange-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">Java</h3>
                 <p className="text-gray-400 text-xs mt-1">Programming Language</p>
               </div>
             </Link>
 
             {/* Spring Boot */}
-            <Link href="/projects?tech=Spring Boot" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <SiSpringboot className="w-10 h-10 text-green-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=Spring Boot" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <SiSpringboot className="w-10 h-10 md:w-12 md:h-12 text-green-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">Spring Boot</h3>
                 <p className="text-gray-400 text-xs mt-1">Java Framework</p>
               </div>
             </Link>
 
             {/* Apache Kafka */}
-            <Link href="/projects?tech=Apache Kafka" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <SiApachekafka className="w-10 h-10 text-yellow-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=Apache Kafka" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <SiApachekafka className="w-10 h-10 md:w-12 md:h-12 text-yellow-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">Apache Kafka</h3>
                 <p className="text-gray-400 text-xs mt-1">Data Streaming</p>
               </div>
             </Link>
 
             {/* GraphQL */}
-            <Link href="/projects?tech=GraphQL" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <SiGraphql className="w-10 h-10 text-pink-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=GraphQL" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <SiGraphql className="w-10 h-10 md:w-12 md:h-12 text-pink-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">GraphQL</h3>
-                <p className="text-gray-400 text-xs mt-1">Query Language</p>
+                <p className="text-gray-400 text-xs mt-1">Query Language for APIs</p>
               </div>
             </Link>
 
             {/* Python */}
-            <Link href="/projects?tech=Python" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <SiPython className="w-10 h-10 text-blue-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=Python" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <SiPython className="w-10 h-10 md:w-12 md:h-12 text-blue-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">Python</h3>
                 <p className="text-gray-400 text-xs mt-1">Programming Language</p>
               </div>
             </Link>
 
             {/* AWS */}
-            <Link href="/projects?tech=AWS" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <FaAws className="w-10 h-10 text-yellow-500" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=AWS" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <FaAws className="w-10 h-10 md:w-12 md:h-12 text-yellow-500" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">AWS</h3>
                 <p className="text-gray-400 text-xs mt-1">Cloud Services</p>
               </div>
             </Link>
 
             {/* Git */}
-            <Link href="/projects?tech=Git" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <FaGitAlt className="w-10 h-10 text-red-400" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=Git" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <FaGitAlt className="w-10 h-10 md:w-12 md:h-12 text-red-400" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">Git</h3>
                 <p className="text-gray-400 text-xs mt-1">Version Control</p>
               </div>
             </Link>
 
             {/* LibGDX */}
-            <Link href="/projects?tech=LibGDX" className="flex items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-gray-700 transition">
-              <FaGamepad className="w-10 h-10 text-orange-300" />
-              <div className="flex flex-col items-start ml-4">
+            <Link href="/projects?tech=LibGDX" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <FaGamepad className="w-10 h-10 md:w-12 md:h-12 text-orange-300" />
+              <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
                 <h3 className="text-white text-base font-semibold">LibGDX</h3>
                 <p className="text-gray-400 text-xs mt-1">Java Framework</p>
               </div>
             </Link>
-
           </div>
         </section>
-
       </div>
     </main>
   );
