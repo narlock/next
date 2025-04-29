@@ -1,60 +1,5 @@
 [
     {
-        "title": "TamoStudy",
-        "description": "Productivity timer with a motivating virtual pet companion.",
-        "technologies": [
-            "Java",
-            "Git",
-            "Swing"
-        ]
-    },
-    {
-        "title": "Portfolio Website",
-        "description": "Personal portfolio built with Next.js and TailwindCSS.",
-        "technologies": [
-            "Next.js",
-            "TailwindCSS",
-            "TypeScript",
-            "Git"
-        ]
-    },
-    {
-        "title": "SpaceCards",
-        "description": "Flashcard project to help develop long-term memory.",
-        "technologies": [
-            "Python",
-            "Git",
-            "Tkinter"
-        ]
-    },
-    {
-        "title": "Time Block API",
-        "description": "Microservice for managing time-blocked calendar events.",
-        "technologies": [
-            "Java",
-            "Spring Boot",
-            "Git"
-        ]
-    },
-    {
-        "title": "mark",
-        "description": "Web Bookmarks manager inside of the terminal.",
-        "technologies": [
-            "Python",
-            "Git"
-        ]
-    },
-    {
-        "title": "Alder",
-        "description": "Feature-rich Productivity Discord Bot.",
-        "technologies": [
-            "Python",
-            "Flask",
-            "MySQL",
-            "Git"
-        ]
-    },
-    {
         "title": "Kaizen LAN",
         "description": "Fullstack app that provides widgets to continuously improve your life.",
         "technologies": [
@@ -64,7 +9,110 @@
             "GraphQL",
             "MySQL",
             "Git"
-        ]
+        ],
+        "tags": [
+            "Fullstack",
+            "Self Improvement"
+        ],
+        "icon": "/icons/kaizenlan.png",
+        "website": "/project/Kaizen%20LAN",
+        "github": "https://github.com/narlock/KaizenLAN"
+    },
+    {
+        "title": "Alder",
+        "description": "Feature-rich Productivity Discord Bot.",
+        "technologies": [
+            "Python",
+            "Flask",
+            "MySQL",
+            "Git"
+        ],
+        "tags": [
+            "Bot",
+            "Discord",
+            "Productivity"
+        ],
+        "icon": "/icons/alder.png",
+        "website": "/project/Alder",
+        "github": "https://github.com/narlock/Alder"
+    },
+    {
+        "title": "TamoStudy",
+        "description": "Productivity timer with a motivating virtual pet companion.",
+        "technologies": [
+            "Java",
+            "Git",
+            "Swing"
+        ],
+        "tags": [
+            "Productivity",
+            "Desktop App"
+        ],
+        "icon": "/icons/tamostudy.png",
+        "website": "/project/TamoStudy",
+        "github": "https://github.com/narlock/TamoStudy"
+    },
+    {
+        "title": "kb",
+        "description": "Kanban project organization tool built for the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ],
+        "tags": [
+            "CLI",
+            "Kanban"
+        ],
+        "icon": "/icons/kb.png",
+        "website": "/project/kb",
+        "github": "https://github.com/narlock/kb"
+    },
+    {
+        "title": "Pomo",
+        "description": "Fully customizable Pomodoro focus timer built for the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ],
+        "tags": [
+            "CLI",
+            "Productivity",
+            "Timer"
+        ],
+        "icon": "/icons/pomo.png",
+        "website": "/project/Pomo",
+        "github": "https://github.com/narlock/Pomo"
+    },
+    {
+        "title": "Time Block API",
+        "description": "Microservice for managing time-blocked calendar events.",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "Git"
+        ],
+        "tags": [
+            "API",
+            "Microservice"
+        ],
+        "icon": "/icons/timeblockapi.png",
+        "website": "/project/Time%20Block%20API",
+        "github": "https://github.com/narlock/TimeBlockAPI"
+    },
+    {
+        "title": "mark",
+        "description": "Web Bookmarks manager inside of the terminal.",
+        "technologies": [
+            "Python",
+            "Git"
+        ],
+        "tags": [
+            "CLI",
+            "Bookmarks"
+        ],
+        "icon": "/icons/mark.png",
+        "website": "/project/mark",
+        "github": "https://github.com/narlock/mark"
     },
     {
         "title": "RogueBoss",
@@ -74,22 +122,29 @@
             "Spring Boot",
             "Git",
             "Swing"
-        ]
+        ],
+        "tags": [
+            "Simulator",
+            "Community"
+        ],
+        "icon": "/icons/rogueboss.png",
+        "website": "/project/RogueBoss",
+        "github": "https://github.com/narlock/RogueBoss"
     },
     {
-        "title": "Pomo",
-        "description": "Fully customizable Pomodoro focus timer built for the terminal.",
+        "title": "SpaceCards",
+        "description": "Flashcard project to help develop long-term memory.",
         "technologies": [
             "Python",
-            "Git"
-        ]
-    },
-    {
-        "title": "kb",
-        "description": "Kanban project organization tool built for the terminal.",
-        "technologies": [
-            "Python",
-            "Git"
-        ]
+            "Git",
+            "Tkinter"
+        ],
+        "tags": [
+            "Flashcards",
+            "Desktop App"
+        ],
+        "icon": "/icons/spacecards.png",
+        "website": "/project/SpaceCards",
+        "github": "https://github.com/narlock/SpaceCards"
     }
 ]

@@ -19,7 +19,7 @@ export default function Home() {
         <img 
           src="/avatar.png" 
           alt="Narlock Profile" 
-          className="w-64 h-64 rounded-full mb-6 object-cover border-4 border-white bg-gray-800"
+          className="w-48 h-48 rounded-full mb-6 object-cover border-4 border-white bg-gray-800"
         />
 
         {/* Name */}
