@@ -37,6 +37,24 @@
         "github": "https://github.com/narlock/Alder"
     },
     {
+        "title": "Jinoah",
+        "description": "Personalized Local AI Assistant",
+        "technologies": [
+            "Python",
+            "Ollama",
+            "Flask",
+            "PyQt"
+        ],
+        "tags": [
+            "AI",
+            "Audio Processing",
+            "Fullstack",
+            "Productivity"
+        ],
+        "icon": "/icons/jinoah.png",
+        "website": "/project/Jinoah"
+    },
+    {
         "title": "TamoStudy",
         "description": "Productivity timer with a motivating virtual pet companion.",
         "technologies": [

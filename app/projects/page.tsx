@@ -75,18 +75,19 @@ function ProjectsContent() {
             </div>
 
             {/* GitHub Link */}
-            <div className="mt-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:underline text-sm"
-                onClick={(e) => e.stopPropagation()} // prevent card link from triggering
-              >
-                View on GitHub
-              </a>
-            </div>
-
+            {project.github && (
+              <div className="mt-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:underline text-sm"
+                  onClick={(e) => e.stopPropagation()} // prevent card link from triggering
+                >
+                  View on GitHub
+                </a>
+              </div>
+            )}
           </div>
         </Link>
       ))}
