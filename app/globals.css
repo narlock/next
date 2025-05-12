@@ -40,8 +40,79 @@
 }
 
 .custom-prose pre {
-    padding: 0.5rem;
+    border: 1px solid white;
+    background-color: black;
     overflow-x: auto;
+    margin-bottom: 1.5rem;
     border-radius: 0.375rem;
     font-size: 0.9rem;
 }
+
+.admonition {
+    border-left: 4px solid #4b5563;
+    background-color: #1f2937;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+  }
+  
+  .admonition-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Shared icon styling */
+  .admonition-title .admonition-icon {
+    font-size: 1rem;
+  }
+  
+  /* Modifier styles to color text + icon */
+  .admonition-note {
+    border-left-color: #60a5fa;
+  }
+  .admonition-note .admonition-title,
+  .admonition-note .admonition-icon {
+    color: #60a5fa;
+  }
+  
+  .admonition-tip {
+    border-left-color: #34d399;
+  }
+  .admonition-tip .admonition-title,
+  .admonition-tip .admonition-icon {
+    color: #34d399;
+  }
+  
+  .admonition-warning {
+    border-left-color: #facc15;
+  }
+  .admonition-warning .admonition-title,
+  .admonition-warning .admonition-icon {
+    color: #facc15;
+  }
+  
+  .admonition-important {
+    border-left-color: #f472b6;
+  }
+  .admonition-important .admonition-title,
+  .admonition-important .admonition-icon {
+    color: #f472b6;
+  }
+  
+  .admonition-caution {
+    border-left-color: #f87171;
+  }
+  .admonition-caution .admonition-title,
+  .admonition-caution .admonition-icon {
+    color: #f87171;
+  }
+  
+  /* Tighten spacing */
+  .admonition p:last-child {
+    margin-bottom: 0;
+  }
+  

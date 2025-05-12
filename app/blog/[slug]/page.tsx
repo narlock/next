@@ -5,7 +5,75 @@ import { notFound } from 'next/navigation';
 import { remark } from 'remark';
 import remarkRehype from 'remark-rehype';
 import rehypeHighlight from 'rehype-highlight';
+import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
+import { visit } from 'unist-util-visit';
+
+// Custom inline remark plugin for [!NOTE]-style admonitions
+function remarkAdmonition() {
+    return (tree: any) => {
+      visit(tree, 'paragraph', (node: any, index: number, parent: any) => {
+        if (!node.children || node.children.length === 0) return;
+  
+        const textNode = node.children[0];
+        if (
+          textNode.type === 'text' &&
+          /^\[!(NOTE|TIP|WARNING|IMPORTANT|CAUTION)\]/i.test(textNode.value)
+        ) {
+          const match = textNode.value.match(/^\[!(\w+)\]\s*(.*)/);
+          if (!match) return;
+  
+          const type = match[1].toLowerCase();
+          const content = match[2];
+  
+          const icons: Record<string, string> = {
+            note: '💡',
+            tip: '✨',
+            warning: '⚠️',
+            important: '❗',
+            caution: '🚧',
+          };
+  
+          const labels: Record<string, string> = {
+            note: 'Note',
+            tip: 'Tip',
+            warning: 'Warning',
+            important: 'Important',
+            caution: 'Caution',
+          };
+  
+          parent.children[index] = {
+            type: 'containerDirective',
+            name: type,
+            children: [
+              {
+                type: 'element',
+                tagName: 'div',
+                properties: { className: 'admonition-title' },
+                children: [
+                  {
+                    type: 'text',
+                    value: `${icons[type] || ''} ${labels[type] || ''}`,
+                  },
+                ],
+              },
+              {
+                type: 'paragraph',
+                children: [{ type: 'text', value: content }],
+              },
+            ],
+            data: {
+              hName: 'div',
+              hProperties: {
+                className: `admonition admonition-${type}`,
+              },
+            },
+          };
+        }
+      });
+    };
+  }
+  
 
 export async function generateStaticParams() {
   const blogDataPath = path.join(process.cwd(), '/data/blog.json');
@@ -17,7 +85,6 @@ export async function generateStaticParams() {
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-
   const filePath = path.join(process.cwd(), 'data', 'blog', `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
@@ -27,9 +94,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { content, data } = matter(fileContent);
 
-  // Inline markdown processing here
   const result = await remark()
-    .use(remarkRehype)
+    .use(remarkAdmonition)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(content);
