@@ -29,4 +29,4 @@ function test() {
 }
 ```
 
-![testing image](avatar.png)
+![testing image](/blog/offline-ai-assistant/avatar.png)
