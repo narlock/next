@@ -1,1 +1,47 @@
 @import "tailwindcss";
+@import 'highlight.js/styles/github-dark.css';
+
+.custom-prose {
+    color: white;
+    line-height: 1.5;
+    font-size: 0.85rem;
+  }
+  
+  .custom-prose h1,
+  .custom-prose h2,
+  .custom-prose h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  .custom-prose p {
+    margin-bottom: 0.6rem;
+    color: #d1d5db;
+    font-size: 0.85rem;
+  }
+  
+  .custom-prose ul {
+    list-style-type: disc;
+    padding-left: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .custom-prose li {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+  
+  .custom-prose a {
+    color: #60a5fa;
+    text-decoration: underline;
+    font-size: 0.85rem;
+  }
+  
+  .custom-prose pre {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+  

@@ -4,8 +4,7 @@ import { faGithub, faDiscord, faYoutube, faXTwitter } from '@fortawesome/free-br
 import { 
   FaJava, 
   FaAws, 
-  FaGitAlt,
-  FaGamepad
+  FaGitAlt
 } from 'react-icons/fa';
 import { SiSpringboot, SiApachekafka, SiGraphql, SiPython, SiJavascript } from 'react-icons/si';
 
