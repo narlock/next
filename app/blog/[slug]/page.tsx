@@ -12,8 +12,15 @@ import { visit } from 'unist-util-visit';
 // Custom inline remark plugin for [!NOTE]-style admonitions
 function remarkAdmonition() {
     return (tree: any) => {
-      visit(tree, 'paragraph', (node: any, index: number, parent: any) => {
-        if (!node.children || node.children.length === 0) return;
+      visit(tree, 'paragraph', (node: any, index: number | undefined, parent: any) => {
+        if (
+          !node.children ||
+          node.children.length === 0 ||
+          typeof index !== 'number' ||
+          !parent
+        ) {
+          return;
+        }
   
         const textNode = node.children[0];
         if (
@@ -49,7 +56,7 @@ function remarkAdmonition() {
               {
                 type: 'element',
                 tagName: 'div',
-                properties: { className: 'admonition-title' },
+                properties: { className: `admonition-title admonition-title-${type}` },
                 children: [
                   {
                     type: 'text',
@@ -74,7 +81,6 @@ function remarkAdmonition() {
     };
   }
   
-
 export async function generateStaticParams() {
   const blogDataPath = path.join(process.cwd(), '/data/blog.json');
   const raw = fs.readFileSync(blogDataPath, 'utf8');
