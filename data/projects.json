@@ -4,6 +4,7 @@
         "description": "Fullstack app that provides widgets to continuously improve your life.",
         "technologies": [
             "Express.js",
+            "JavaScript",
             "Java",
             "Spring Boot",
             "GraphQL",

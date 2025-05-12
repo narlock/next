@@ -7,7 +7,7 @@ import {
   FaGitAlt,
   FaGamepad
 } from 'react-icons/fa';
-import { SiSpringboot, SiApachekafka, SiGraphql, SiPython } from 'react-icons/si';
+import { SiSpringboot, SiApachekafka, SiGraphql, SiPython, SiJavascript } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -121,12 +121,12 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* LibGDX */}
-            <Link href="/projects?tech=LibGDX" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
-              <FaGamepad className="w-10 h-10 md:w-12 md:h-12 text-orange-300" />
+            {/* JavaScript */}
+            <Link href="/projects?tech=JavaScript" className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg shadow-md p-4 hover:bg-orange-900 hover:scale-105 transition duration-300">
+              <SiJavascript className="w-10 h-10 md:w-12 md:h-12 text-yellow-400" />
               <div className="flex flex-col items-center md:items-start ml-0 md:ml-4 mt-2 md:mt-0">
-                <h3 className="text-white text-base font-semibold">LibGDX</h3>
-                <p className="text-gray-400 text-xs mt-1">Java Framework</p>
+                <h3 className="text-white text-base font-semibold">JavaScript</h3>
+                <p className="text-gray-400 text-xs mt-1">Programming Language</p>
               </div>
             </Link>
           </div>
