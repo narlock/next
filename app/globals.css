@@ -80,6 +80,15 @@
   color: #f1f5f9; /* text-slate-100 */
 }
 
+.custom-prose img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
 .admonition {
     border-left: 4px solid #4b5563;
     background-color: #1f2937;

@@ -117,7 +117,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const contentHtml = result.toString();
 
   return (
-    <main className="max-w-2xl mx-auto px-6 py-12">
+    <main className="max-w-4xl mx-auto px-6 py-12">
       <h1 className="text-white text-4xl font-bold mb-2">{data.title}</h1>
       <div className="flex flex-wrap items-center gap-2 mb-8">
         <p className="text-gray-400 text-md">
