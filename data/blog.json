@@ -2,7 +2,7 @@
     {
       "title": "Building My Offline AI Assistant",
       "slug": "offline-ai-assistant",
-      "date": "2025-05-12",
+      "date": "2025-05-13",
       "excerpt": "The first iteration of Jinoah: an offline AI assistant.",
       "tags": ["Jinoah", "AI", "Python", "PyQt", "Whisper", "Flask"]
     }
