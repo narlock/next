@@ -91,7 +91,9 @@ export async function generateStaticParams() {
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+
   const filePath = path.join(process.cwd(), 'data', 'blog', `${slug}.md`);
+  const blogDataPath = path.join(process.cwd(), 'data', 'blog.json');
 
   if (!fs.existsSync(filePath)) {
     notFound();
@@ -99,6 +101,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { content, data } = matter(fileContent);
+
+  const blogDataRaw = fs.readFileSync(blogDataPath, 'utf8');
+  const posts = JSON.parse(blogDataRaw);
+  const postMeta = posts.find((post: any) => post.slug === slug);
 
   const result = await remark()
     .use(remarkAdmonition)
@@ -113,9 +119,20 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   return (
     <main className="max-w-2xl mx-auto px-6 py-12">
       <h1 className="text-white text-4xl font-bold mb-2">{data.title}</h1>
-      <p className="text-gray-400 text-sm mb-8">
-        {new Date(data.date).toLocaleDateString()}
-      </p>
+      <div className="flex flex-wrap items-center gap-2 mb-8">
+        <p className="text-gray-400 text-md">
+          {new Date(data.date).toLocaleDateString()}
+        </p>
+        <span className="text-gray-500">•</span>
+        {postMeta?.tags?.map((tag: string, idx: number) => (
+          <span
+            key={idx}
+            className="text-xs text-gray-300 bg-gray-800 rounded px-2 py-1"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
       <article
         className="custom-prose"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
