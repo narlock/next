@@ -1,10 +1,29 @@
 [
-    {
-      "title": "Building My Offline AI Assistant",
-      "slug": "offline-ai-assistant",
-      "date": "2025-05-13",
-      "excerpt": "The first iteration of Jinoah: an offline AI assistant.",
-      "tags": ["Jinoah", "AI", "Python", "PyQt", "Whisper", "Flask"]
-    }
-  ]
-  
+  {
+    "title": "GTX 1070 vs RTX 3080 Local AI Assistant Benchmarks",
+    "slug": "ai-assistant-benchmark",
+    "date": "2025-05-17",
+    "excerpt": "Comparing the performance upgrade between GTX 1070 and RTX 3080 with my Local AI assistant.",
+    "tags": [
+      "Jinoah",
+      "AI",
+      "Python",
+      "pandas",
+      "matplotlib"
+    ]
+  },
+  {
+    "title": "Building My Offline AI Assistant",
+    "slug": "offline-ai-assistant",
+    "date": "2025-05-13",
+    "excerpt": "The first iteration of Jinoah: an offline AI assistant.",
+    "tags": [
+      "Jinoah",
+      "AI",
+      "Python",
+      "PyQt",
+      "Whisper",
+      "Flask"
+    ]
+  }
+]
