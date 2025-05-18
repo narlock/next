@@ -1,5 +1,6 @@
 ---
 title: GTX 1070 vs RTX 3080 Local AI Assistant Benchmarks
+excerpt: Comparing the performance upgrade between GTX 1070 and RTX 3080 with my Local AI assistant.
 date: 2025-05-17
 ---
 
@@ -82,15 +83,57 @@ Running with the **New System** (RTX 3080) took 23.3 minutes to complete 1000 sa
 | Min       | 354                    |
 | Max       | 23,659                 |
 
-### Comparison:
-For this test, the **New System** is roughly ~2.3x faster overall and show consistent performance improvements over the newer system.
-
 ## Medium Prompt Test
+In this test, the input prompt was "What are the benefits of using Python for web development?"
 
-> [!WARNING]
-> This section is in progress!
+### Old System
+Running with the **Old System** (GTX 1070) took 131 minutes to complete 250 samples.
+
+![GTX 1070, Medium Results](/blog/ai-assistant-benchmark/GTX_1070_Medium_latency_plot.png)
+
+| Statistic | Measured Latency (ms)  |
+|-----------|------------------------|
+| Mean      | 31,494                 |
+| Min       | 9,137                  |
+| Max       | 68,310                 |
+
+### New System
+Running with the **New System** (RTX 3080) took 59 minutes to complete 250 samples.
+
+![RTX 3080, Short Results](/blog/ai-assistant-benchmark/RTX_3080_Medium_latency_plot.png)
+
+| Statistic | Measured Latency (ms)  |
+|-----------|------------------------|
+| Mean      | 14,225                 |
+| Min       | 3,732                  |
+| Max       | 29,922                 |
 
 ## Long Prompt Test
+For the final test, the input prompt was "Generate a short story about a robot learning to love, in the style of Isaac Asimov"
+
+### Old System
+Running with the **Old System** (GTX 1070) took 68 minutes to complete 50 samples.
+
+![GTX 1070, Long Results](/blog/ai-assistant-benchmark/GTX_1070_Long_latency_plot.png)
+
+| Statistic | Measured Latency (ms)  |
+|-----------|------------------------|
+| Mean      | 81,981                 |
+| Min       | 55,473                 |
+| Max       | 124,991                |
+
+### New System
+Running with the **New System** (RTX 3080) took 27 minutes to complete 50 samples.
+
+![RTX 3080, Long Results](/blog/ai-assistant-benchmark/RTX_3080_Long_latency_plot.png)
+
+| Statistic | Measured Latency (ms)  |
+|-----------|------------------------|
+| Mean      | 32,974                 |
+| Min       | 21,724                 |
+| Max       | 46,329                 |
+
+## Analysis
 
 > [!WARNING]
-> This section is in progress!
+> This section is in progress...

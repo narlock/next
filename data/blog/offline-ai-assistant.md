@@ -1,5 +1,6 @@
 ---
 title: Building My Offline AI Assistant
+excerpt: The first iteration of Jinoah: an offline AI assistant.
 date: 2025-05-13
 ---
 

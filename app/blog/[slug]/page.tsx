@@ -9,6 +9,20 @@ import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
 import { visit } from 'unist-util-visit';
 import remarkGfm from 'remark-gfm';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const filePath = path.join(process.cwd(), 'data', 'blog', `${params.slug}.md`);
+  if (!fs.existsSync(filePath)) return {};
+
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const { data } = matter(fileContent);
+
+  return {
+    title: data.title || 'Blog Post',
+    description: data.excerpt || `Read this post about ${data.title}`,
+  };
+}
 
 // Custom inline remark plugin for [!NOTE]-style admonitions
 function remarkAdmonition() {
