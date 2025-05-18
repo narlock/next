@@ -11,8 +11,10 @@ import { visit } from 'unist-util-visit';
 import remarkGfm from 'remark-gfm';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const filePath = path.join(process.cwd(), 'data', 'blog', `${params.slug}.md`);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  const filePath = path.join(process.cwd(), 'data', 'blog', `${slug}.md`);
   if (!fs.existsSync(filePath)) return {};
 
   const fileContent = fs.readFileSync(filePath, 'utf8');
