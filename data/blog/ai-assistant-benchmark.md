@@ -134,6 +134,6 @@ Running with the **New System** (RTX 3080) took 27 minutes to complete 50 sample
 | Max       | 46,329                 |
 
 ## Analysis
-
-> [!WARNING]
-> This section is in progress...
+- Consistent Speed Gains: The RTX 3080 delivers between 2.2–2.7× performance gains across all prompt lengths.
+- Lower Variability: Standard deviation (based on range) appears tighter in the 3080 system, suggesting more consistent performance and fewer spikes.
+- System Scalability: These results imply the newer system can handle higher concurrency or lower throttling margins—ideal for scaling.
