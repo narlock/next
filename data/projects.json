@@ -16,7 +16,7 @@
             "Self Improvement"
         ],
         "icon": "/icons/kaizenlan.png",
-        "website": "/project/Kaizen%20LAN",
+        "website": "https://kaizen.narlock.dev",
         "github": "https://github.com/narlock/KaizenLAN"
     },
     {
@@ -34,7 +34,7 @@
             "Productivity"
         ],
         "icon": "/icons/alder.png",
-        "website": "/project/Alder",
+        "website": "https://alder.narlock.dev",
         "github": "https://github.com/narlock/Alder"
     },
     {
@@ -64,11 +64,12 @@
             "Swing"
         ],
         "tags": [
+            "Pomodoro",
             "Productivity",
             "Desktop App"
         ],
         "icon": "/icons/tamostudy.png",
-        "website": "/project/TamoStudy",
+        "website": "https://tamostudy.com",
         "github": "https://github.com/narlock/TamoStudy"
     },
     {
@@ -80,10 +81,11 @@
         ],
         "tags": [
             "CLI",
+            "Productivity",
             "Kanban"
         ],
         "icon": "/icons/kb.png",
-        "website": "/project/kb",
+        "website": "https://kb.narlock.dev",
         "github": "https://github.com/narlock/kb"
     },
     {
@@ -99,7 +101,7 @@
             "Timer"
         ],
         "icon": "/icons/pomo.png",
-        "website": "/project/Pomo",
+        "website": "https://pomo.narlock.dev",
         "github": "https://github.com/narlock/Pomo"
     },
     {
@@ -115,8 +117,8 @@
             "Microservice"
         ],
         "icon": "/icons/timeblockapi.png",
-        "website": "/project/Time%20Block%20API",
-        "github": "https://github.com/narlock/TimeBlockAPI"
+        "website": "https://github.com/narlock/simple-time-block-api",
+        "github": "https://github.com/narlock/simple-time-block-api"
     },
     {
         "title": "mark",
@@ -127,10 +129,11 @@
         ],
         "tags": [
             "CLI",
+            "Productivity",
             "Bookmarks"
         ],
         "icon": "/icons/mark.png",
-        "website": "/project/mark",
+        "website": "https://github.com/narlock/mark",
         "github": "https://github.com/narlock/mark"
     },
     {
@@ -147,8 +150,23 @@
             "Community"
         ],
         "icon": "/icons/rogueboss.png",
-        "website": "/project/RogueBoss",
+        "website": "https://rb.narlock.dev",
         "github": "https://github.com/narlock/RogueBoss"
+    },
+    {
+        "title": "UsefulItems",
+        "description": "Bukkit 1060 plugin that gives use to some of the less useful items in Minecraft Beta 1.7.3.",
+        "technologies": [
+            "Java",
+            "Git"
+        ],
+        "tags": [
+            "Mod",
+            "Game"
+        ],
+        "icon": "/icons/usefulitems.png",
+        "website": "https://github.com/narlock/UsefulItems",
+        "github": "https://github.com/narlock/UsefulItems"
     },
     {
         "title": "SpaceCards",
@@ -160,10 +178,11 @@
         ],
         "tags": [
             "Flashcards",
+            "Productivity",
             "Desktop App"
         ],
         "icon": "/icons/spacecards.png",
-        "website": "/project/SpaceCards",
+        "website": "https://github.com/narlock/SpaceCards",
         "github": "https://github.com/narlock/SpaceCards"
     }
 ]
