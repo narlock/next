@@ -100,13 +100,15 @@ function BlogContent() {
       {activeTag && (
         <div className="flex items-center justify-between mb-4 text-sm text-gray-300">
           <span>
-            Showing posts tagged <span className="text-orange-300">#{activeTag}</span>
+            Showing posts tagged <span className="text-orange-300">{activeTag}</span>
           </span>
           <button onClick={() => setTag('')} className="underline hover:text-orange-300">
             Clear filter
           </button>
         </div>
       )}
+
+      <hr className="w-full border-t border-gray-600 my-12" />
 
       {/* The list */}
       <ul className="space-y-4">
@@ -129,7 +131,7 @@ function BlogContent() {
                     className="px-2 py-0.5 rounded-full bg-gray-800 border border-gray-700 text-xs text-gray-300 hover:border-orange-400 hover:text-orange-300 transition-colors"
                     aria-label={`Filter by ${t}`}
                   >
-                    #{t}
+                    {t}
                   </button>
                 ) : (
                   <span
@@ -137,7 +139,7 @@ function BlogContent() {
                     className="px-2 py-0.5 rounded-full bg-gray-900/60 border border-gray-800 text-xs text-gray-500"
                     title="Not a site tag"
                   >
-                    #{t}
+                    {t}
                   </span>
                 )
               )}
@@ -159,8 +161,6 @@ export default function BlogPage() {
   return (
     <main className="p-8 min-h-screen max-w-2xl mx-auto">
       <h1 className="text-4xl font-bold text-white mb-10 text-center">Blog</h1>
-      <hr className="w-full border-t border-gray-600 my-12" />
-
       {/* Match your Projects page: wrap dynamic content in Suspense */}
       <Suspense fallback={<div className="text-white text-center">Loading blog posts...</div>}>
         <BlogContent />
