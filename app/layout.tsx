@@ -19,6 +19,7 @@ export default function RootLayout({
         {/* Navbar */}
         <nav className="inline-flex bg-gray-800 rounded-lg shadow-md px-8 py-3 mx-auto mt-4 space-x-8 border-1 border-white">
           <Link href="/" className="hover:text-gray-300 transition-colors duration-200">Home</Link>
+          <Link href="/about" className="hover:text-gray-300 transition-colors duration-200">About</Link>
           <Link href="/projects" className="hover:text-gray-300 transition-colors duration-200">Projects</Link>
           <Link href="/blog" className="hover:text-gray-300 transition-colors duration-200">Blog</Link>
         </nav>
