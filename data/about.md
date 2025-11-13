@@ -1,3 +1,6 @@
-# About Me
+---
+title: About Me
+excerpt: A detailed summary about me and my software journey.
+---
 
-This section is under construction!
+Hello world!
