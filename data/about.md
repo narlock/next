@@ -13,7 +13,7 @@ I did not start my *real coding* journey until 2017 when I took my first introdu
 
 ## Building personal applications
 
-During my time in university, I began to build my own software projects outside of coursework. The first longer project I built was [TamoStudy](https://github.com/narlock/TamoStudy), a destkop study timer application designed to enhance focus and productivity by incorporating a virtual pet to assist users with motivation. [![GitHub stars](https://img.shields.io/github/stars/narlock/TamoStudy?style=social)](https://github.com/narlock/TamoStudy)
+During my time in university, I began to build my own software projects outside of coursework. The first longer project I built was [TamoStudy](https://github.com/narlock/TamoStudy), a desktop study timer application designed to enhance focus and productivity by incorporating a virtual pet to assist users with motivation. [![GitHub stars](https://img.shields.io/github/stars/narlock/TamoStudy?style=social)](https://github.com/narlock/TamoStudy)
 
 <img src="TamoStudy.png" alt="TamoStudy" width="60%" />
 
