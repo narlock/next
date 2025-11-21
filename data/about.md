@@ -15,7 +15,7 @@ I did not start my *real coding* journey until 2017 when I took my first introdu
 
 During my time in university, I began to build my own software projects outside of coursework. The first longer project I built was [TamoStudy](https://github.com/narlock/TamoStudy), a desktop study timer application designed to enhance focus and productivity by incorporating a virtual pet to assist users with motivation. [![GitHub stars](https://img.shields.io/github/stars/narlock/TamoStudy?style=social)](https://github.com/narlock/TamoStudy)
 
-<img src="TamoStudy.png" alt="TamoStudy" width="60%" />
+<img src="/about/TamoStudy.png" alt="TamoStudy" width="60%" />
 
 I made numerous [demo videos](https://www.youtube.com/watch?v=8JeMkaXIQOY) on YouTube showcasing the new features I would add for TamoStudy. This caused TamoStudy to become something that was used not only for me, but for others all around the world. As of writing, TamoStudy has over 2,500 downloads and continues to provide focus motivation.
 
@@ -33,7 +33,7 @@ In addition to completing my **B.S. in Computer Science**, I have worked to rece
 
 A software engineer's workflow and setup is very important when it comes to focus, productivity, and delivering new features and applications. The workflow itself is not just the tools that are used to complete work, but the catalysts for physical and digital organization.
 
-[Setup Image to insert after I cable manage it]
+<img src="/about/setup.jpg" alt="Setup" width="80%" />
 
 I use a three screen setup. The focus monitor of my workflow is my ultrawide monitor. This is the primary screen that I use for any task that requires deep work. Whether that be for focused coding sessions or reading/writing documentation, having a ultra wide screen allows me to be focused entirely what is on the screen without having to be distracted by what may be on the others. My second monitor is a vertical screen that solely serves the purpose of displaying my instant messaging applications. This allows me to easily see the messages that I receive while I am working, while not losing where I am at on my focus monitor. When I use a laptop, the laptop display is usually used to display my web browser that is opened on a page that describes what I am currently working on. When I need to review any kind of requirement, I can simply look at that screen to obtain details and return right back to whatever is on my focus monitor.
 
