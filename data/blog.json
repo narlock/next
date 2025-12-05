@@ -1,5 +1,14 @@
 [
   {
+    "title": "Trying out Arch Linux/KDE Plasma as an Ubuntu/GNOME daily driver",
+    "slug": "trying-arch-linux",
+    "date": "2025-12-01",
+    "excerpt": "Installing and configuring Arch Linux + KDE Plasma and comparing it to my Ubunutu/GNOME setup",
+    "tags": [
+      "Linux"
+    ]
+  },
+  {
     "title": "GTX 1070 vs RTX 3080 Local AI Assistant Benchmarks",
     "slug": "ai-assistant-benchmark",
     "date": "2025-05-17",
