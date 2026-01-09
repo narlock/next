@@ -41,8 +41,8 @@ There are three main machines I use for my personal software development, they a
 | Device            | OS              | CPU              | GPU         | RAM  |
 |-------------------|-----------------|------------------|-------------|------|
 | **ThinkPad T14s** | Ubuntu 24.04     | Ryzen 7 PRO 4750U | —           | 16GB |
+| **Legion 5**      | Windows 11   | Ryzen 7 260        | RTX 5060  | 16GB |
 | **MacBook Pro 14"**     | macOS   | M1 Pro            | —           | 16GB |
-| **Custom Desktop**      | Windows 11 Pro   | i5-12600KF        | RX 5700 XT  | 32GB |
 
 
 I use all of these machines to do software development. When I built software, I often want to make sure that I can build, package, and run them on each operating system. Having machines that run Windows, macOS, and Linux allow me to test app experiences on each of them. It also allows me to directly debug software that may have OS differences.
