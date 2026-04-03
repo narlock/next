@@ -38,6 +38,23 @@
         "github": "https://github.com/narlock/Alder"
     },
     {
+        "title": "OpenHTTPClient",
+        "description": "Simple, developer-focused HTTP client.",
+        "technologies": [
+		"Java",
+		"Git",
+		"Swing",
+		"JavaFX"
+        ],
+        "tags": [
+            "Productivity",
+	    "Desktop App"
+        ],
+        "icon": "/icons/openhttpclient.png",
+        "website": "https://github.com/narlock/OpenHTTPClient",
+        "github": "https://github.com/narlock/OpenHTTPClient"
+    },
+    {
         "title": "Jinoah",
         "description": "Personalized Local AI Assistant",
         "technologies": [
