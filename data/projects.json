@@ -16,7 +16,8 @@
             "Productivity",
             "Team-focused"
         ],
-        "icon": "/icons/cs2stratbook.png"
+        "icon": "/icons/cs2stratbook.png",
+        "website": "https://narlock.dev"
     },
     {
         "title": "Kaizen LAN",
