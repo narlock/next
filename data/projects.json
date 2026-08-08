@@ -1,5 +1,24 @@
 [
     {
+        "title": "CS2 Stratbook",
+        "description": "Counter-Strike: 2 strategy building website for competitive teams.",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "AWS",
+            "S3"
+        ],
+        "tags": [
+            "Fullstack",
+            "Productivity",
+            "Team-focused"
+        ],
+        "icon": "/icons/cs2stratbook.png"
+    },
+    {
         "title": "Kaizen LAN",
         "description": "Fullstack app that provides widgets to continuously improve your life.",
         "technologies": [
